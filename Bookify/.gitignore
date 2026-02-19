@@ -1,0 +1,75 @@
+# Visual Studio / .NET
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build output
+[Bb]in/
+[Oo]bj/
+**/bin/
+**/obj/
+**/out/
+
+# Rider
+.idea/
+*.sln.DotSettings.user
+
+# NuGet
+packages/
+*.nupkg
+.nuget/
+
+# Dotnet artifacts
+artifacts/
+project.lock.json
+project.fragment.lock.json
+
+# Publish
+publish/
+*.Publish.xml
+*.pubxml.user
+
+# ReSharper
+_ReSharper*/
+*.DotSettings.user
+
+# Coverage and test results
+coverage/
+*.coverage
+*.coveragexml
+*.lcov
+TestResults/
+*.trx
+
+# Logs
+*.log
+
+# Database
+*.mdf
+*.ldf
+
+# Local app settings and secrets
+appsettings.*.json
+secrets.json
+.env
+
+# Docker
+**/Docker/
+*.local
+docker-compose.override.yml
+
+# VS Code
+.vscode/
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*$RECYCLE.BIN/
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
