@@ -1,4 +1,4 @@
-﻿using Bookify.Domain.Abstractions;
+using Bookify.Domain.Abstractions;
 using Bookify.Domain.Apartments;
 using Bookify.Domain.Bookings.Events;
 using Bookify.Domain.Shared;
@@ -39,15 +39,15 @@ public sealed class Booking : Entity
 
     public Guid UserId { get; private set; }
 
-    public DateRange Duration { get; private set; }
+    public DateRange Duration { get; private set; } = null!;
 
-    public Money PriceForPeriod { get; private set; }
+    public Money PriceForPeriod { get; private set; } = null!;
 
-    public Money CleaningFee { get; private set; }
+    public Money CleaningFee { get; private set; } = null!;
 
-    public Money AmenitiesUpCharge { get; private set; }
+    public Money AmenitiesUpCharge { get; private set; } = null!;
 
-    public Money TotalPrice { get; private set; }
+    public Money TotalPrice { get; private set; } = null!;
 
     public BookingStatus Status { get; private set; }
 

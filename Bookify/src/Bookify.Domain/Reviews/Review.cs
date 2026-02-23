@@ -1,4 +1,4 @@
-﻿using Bookify.Domain.Abstractions;
+using Bookify.Domain.Abstractions;
 using Bookify.Domain.Bookings;
 using Bookify.Domain.Reviews.Events;
 
@@ -34,9 +34,9 @@ public sealed class Review : Entity
 
     public Guid UserId { get; private set; }
 
-    public Rating Rating { get; private set; }
+    public Rating Rating { get; private set; } = null!;
 
-    public Comment Comment { get; private set; }
+    public Comment Comment { get; private set; } = null!;
 
     public DateTime CreatedOnUtc { get; private set; }
 
